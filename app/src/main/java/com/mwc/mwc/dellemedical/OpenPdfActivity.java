@@ -20,7 +20,6 @@ public class OpenPdfActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         try {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_open_pdf);
         mywebView=(WebView)findViewById(R.id.OPENPDFWEBVIEW);
