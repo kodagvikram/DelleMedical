@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       tools:context="com.mwc.mwc.dellemedical.LoginActivity">
+
+          <RelativeLayout
+              android:id="@+id/LogoImageLayout"
+              android:layout_width="250dp"
+              android:layout_height="250dp"
+              android:layout_marginTop="17dp"
+              android:layout_centerHorizontal="true"
+              android:background="@drawable/delle_logo_larg"
+              >
+          </RelativeLayout>
+
+    <EditText
+        android:id="@+id/USERIDEDITTEXT"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:singleLine="true"
+        android:layout_marginLeft="07dp"
+        android:layout_marginRight="07dp"
+        android:layout_below="@+id/LogoImageLayout"
+        android:gravity="center"
+        android:textColorHint="#FFFFFF"
+        android:hint="USERNAME"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/PASSWORDEDITTEXT"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:singleLine="true"
+        android:layout_marginLeft="07dp"
+        android:layout_marginRight="07dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/USERIDEDITTEXT"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFFFF"
+        android:hint="PASSWORD"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        />
+
+
+
+</RelativeLayout>

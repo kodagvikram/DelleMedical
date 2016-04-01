@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textcolor"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/LogoImageLayout"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/delle_logo_larg"
+                >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/LABLELAYOUT"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rounded_button_xml"
+                >
+
+                <TextView
+                    android:id="@+id/USERNAMETEXTVIEW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="@color/textcolor"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/USERIDEDITTEXT"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:singleLine="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="07dp"
+                android:layout_below="@+id/LABLELAYOUT"
+                android:gravity="center"
+                android:textColorHint="#FFFFFF"
+                android:textStyle="bold"
+                android:text="MY MEDICAL HISTORY"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/MIDDLELAYOUT"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/LogoImageLayout"
+               android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_corner"
+                >
+
+                <Button
+                    android:id="@+id/PDFBUTTON"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="PDF FROM PATIENT DATABASE\n\nNO IMAGES OR SCANED DOCUMENTS  "
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:background="@android:color/transparent"
+                    />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/BACKBTN"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+               android:layout_alignParentBottom="true"
+                android:background="@drawable/backbtnimage"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                android:text="Back"
+                android:textSize="18dp"
+
+                />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

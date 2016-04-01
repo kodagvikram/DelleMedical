@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textcolor"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/LogoImageLayout"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="1dp"
+        android:background="@drawable/delle_logo_larg"
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LABLELAYOUT"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/LogoImageLayout"
+        android:background="#555555"
+        >
+
+        <TextView
+            android:id="@+id/USERNAMETEXTVIEW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/textcolor"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/LOCKBTN"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="07dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/LABLELAYOUT"
+        android:textSize="40dp"
+        android:textColor="@android:color/darker_gray"
+        android:background="@android:color/transparent"
+        android:text="@string/icon_lock"
+        />
+
+    <ImageView
+        android:id="@+id/USERIDEDITTEXT2"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="07dp"
+        android:layout_marginRight="07dp"
+
+        android:layout_below="@+id/LABLELAYOUT"
+
+        />
+
+    <Button
+        android:id="@+id/USERIDEDITTEXT"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:singleLine="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="07dp"
+        android:layout_below="@+id/LABLELAYOUT"
+        android:gravity="center"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
+        android:text="MY MEDICAL HISTORY"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/PASSWORDEDITTEXT"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:singleLine="true"
+        android:layout_marginLeft="07dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/USERIDEDITTEXT"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColorHint="#FFFFFF"
+        android:text="CENTER NOTIFICATIONS"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/MESSAGEBTN"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:singleLine="true"
+        android:layout_marginLeft="07dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/PASSWORDEDITTEXT"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColorHint="#FFFFFF"
+        android:text="SEND MESSAGE"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/NOTIFICATIONLABLE"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:singleLine="true"
+        android:layout_marginLeft="07dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/MESSAGEBTN"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColorHint="#FFFFFF"
+        android:text="Push notification"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        />
+
+            <ToggleButton
+                android:id="@+id/TPGGLEBTN"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/MESSAGEBTN"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btntoggle_selector"
+                android:textColor="@android:color/white"
+                android:textOff=""
+                android:textOn="" />
+
+    <Button
+        android:id="@+id/LOGOUTBTN"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:singleLine="true"
+        android:layout_marginLeft="07dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/NOTIFICATIONLABLE"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColorHint="#FFFFFF"
+        android:text="LogOUT"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
